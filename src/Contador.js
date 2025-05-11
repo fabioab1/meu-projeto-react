@@ -33,7 +33,7 @@ function Quadro(){
             <Total count={countTotal} />
             <div id='cont-pessoas'>
                 <Cont1 caminhoImg={homem} txtAlt={'Ícone de um homem com uniforme corporativo'} rotulo={'Homens'} count={countH} onClickAdd={cliqueMouseHAdd} onClickSub={cliqueMouseHSub}/>
-                <Cont1 caminhoImg={mulher} txtAlt={'Ícone de uma mulher com uniforme corporativo'} rotulo={'Mulheres'} count={countM} onClickAdd={cliqueMouseMAdd} />
+                <Cont1 caminhoImg={mulher} txtAlt={'Ícone de uma mulher com uniforme corporativo'} rotulo={'Mulheres'} count={countM} onClickAdd={cliqueMouseMAdd} onClickSub={cliqueMouseMSub} />
             </div>
         </div>
     );
@@ -50,13 +50,13 @@ function Total({ count }){
     );
 }
 
-function Cont1({ caminhoImg, txtAlt, rotulo, count, onClick }){ // Parte que contém a imagem, os botões, o rótulo e o contador
+function Cont1({ caminhoImg, txtAlt, rotulo, count, onClickAdd, onClickSub }){ // Parte que contém a imagem, os botões, o rótulo e o contador
     return (
         <div id='parte-pessoa'>
             <img className='figura' src={caminhoImg} alt={txtAlt}></img>
             <div id='botoes'>
-                <Soma onClick={onClick} />
-                <Subtrair onClick={onClick} />
+                <Soma onClick={onClickAdd} />
+                <Subtrair onClick={onClickSub} />
             </div>
             <p id='rotulo-pessoa'>{rotulo}</p>
             <Contagem count={count} />
