@@ -20,14 +20,32 @@
 }
 
 #quadro {
-    width: 400px;
+    width: 215px;
     justify-items: center;
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+#quadro > *:first-child {
+    align-self: stretch;
+}
+
+#total {
+    margin-top: 0px;
+    margin-bottom: 7px;
 }
 
 #parte-total {
     width: 100px;
     text-align: center;
+    flex: 2;
+}
+
+#cont-pessoas {
+    width: 215px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #parte-pessoa {
@@ -64,8 +82,4 @@
     border: none;
     color: white;
     font-size: 30px;
-}
-
-#total {
-    margin-bottom: 7px;
 }

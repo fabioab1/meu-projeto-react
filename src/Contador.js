@@ -6,8 +6,10 @@ function Quadro(){
     return (
         <div id='quadro'>
             <Total />
-            <Cont1 caminhoImg={homem} txtAlt={'Ícone de um homem com uniforme corporativo'} rotulo={'Homens'} />
-            <Cont1 caminhoImg={mulher} txtAlt={'Ícone de uma mulher com uniforme corporativo'} rotulo={'Mulheres'} />
+            <div id='cont-pessoas'>
+                <Cont1 caminhoImg={homem} txtAlt={'Ícone de um homem com uniforme corporativo'} rotulo={'Homens'} />
+                <Cont1 caminhoImg={mulher} txtAlt={'Ícone de uma mulher com uniforme corporativo'} rotulo={'Mulheres'} />
+            </div>
         </div>
     );
 }
