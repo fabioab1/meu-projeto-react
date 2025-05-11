@@ -6,7 +6,7 @@ export default function Relogio() {
     
     return (
       <>
-      <p>{hora}</p>
+      <button>I'm a button</button>
       </>
     );
 }
