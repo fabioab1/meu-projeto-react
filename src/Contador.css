@@ -17,6 +17,7 @@
     height: auto;
     margin-top: 26px;
     margin-bottom: 6px;
+    user-select: none;
 }
 
 #quadro {
@@ -63,6 +64,17 @@
 
 }
 
+#reiniciar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+#reiniciar:hover {
+    cursor: pointer;
+}
+
 #soma {
     background-color: green;
     width: 40px;
@@ -72,6 +84,8 @@
     color: white;
     font-size: 30px;
     margin-right: 7px;
+    cursor: pointer;
+    user-select: none;
 }
 
 #subtrair {
@@ -82,4 +96,6 @@
     border: none;
     color: white;
     font-size: 30px;
+    cursor: pointer;
+    user-select: none;
 }

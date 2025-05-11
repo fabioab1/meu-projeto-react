@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Contador.css';
 import homem from './homem.png';
 import mulher from './mulher.png';
+import reiniciar from './reiniciar.png';
 
 function Quadro(){
     const [countTotal, setCount] = useState(0);
@@ -19,18 +20,29 @@ function Quadro(){
     }
     
     function cliqueMouseHSub() {
-        setCountH(countH - 1);
-        setCount(countTotal - 1);
+        if (countH > 0) {
+            setCountH(countH - 1);
+            setCount(countTotal - 1);
+        }
     }
     
     function cliqueMouseMSub() {
-        setCountM(countM - 1);
-        setCount(countTotal - 1);
+        if (countM > 0) {
+            setCountM(countM - 1);
+            setCount(countTotal - 1);
+        }
+    }
+
+    function cliqueMouseReset() {
+        setCountH(0);
+        setCountM(0);
+        setCount(0);
     }
 
     return (
         <div id='quadro'>
             <Total count={countTotal} />
+            <Reiniciar onClick={cliqueMouseReset} />
             <div id='cont-pessoas'>
                 <Cont1 caminhoImg={homem} txtAlt={'Ícone de um homem com uniforme corporativo'} rotulo={'Homens'} count={countH} onClickAdd={cliqueMouseHAdd} onClickSub={cliqueMouseHSub}/>
                 <Cont1 caminhoImg={mulher} txtAlt={'Ícone de uma mulher com uniforme corporativo'} rotulo={'Mulheres'} count={countM} onClickAdd={cliqueMouseMAdd} onClickSub={cliqueMouseMSub} />
@@ -85,6 +97,12 @@ function Contagem({ count }){
         <div className="contador">
             {count}
         </div>
+    );
+}
+
+function Reiniciar({ onClick }) {
+    return (
+        <img id='reiniciar' onClick={onClick} src={reiniciar} alt='Seta em formato de círculo, indicando o botão de reiniciar a contagem'></img>
     );
 }
 
