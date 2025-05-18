@@ -21,12 +21,7 @@ export default function Profile(props) {
     return (
         <>
             <div className="card">
-                <Avatar 
-                    person={props.person}
-                    size={props.size}
-                    isSepia={props.isSepia}
-                    thickBorder={props.thickBorder}
-                />
+                <Avatar {...props} />
             </div>
 
             <div>
