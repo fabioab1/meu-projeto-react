@@ -1,26 +1,24 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import "./Relogio.css";
 
 export default function Relogio() {
-  const [hora, setHora] = useState(0);
 
-  function tempoPassou() {
-    setHora(hora + 1);
-  }
+  const [dataAtual, setDataAtual] = useState(new Date());
 
-  
+  useEffect(() => {
+    const espera = setTimeout(() => {
+      setDataAtual(new Date());
+    }, 1000);
 
-  let horaAt = 0;
-  function tick() {
-    horaAt++;
-    tempoPassou();
-  }
+    return () => clearTimeout(espera);
+  }, [dataAtual]);
 
-  setInterval(tick, 1000);
+  const horaFormatada = dataAtual.toLocaleTimeString('pt-BR');
 
   return (
     <>
-      <p>{hora}</p>
+      <p>{horaFormatada}</p>
     </>
   );
 }
