@@ -8,6 +8,7 @@ import Ex5 from "./Ex5";
 import Ex6 from "./Ex6";
 import Ex7 from "./Ex7";
 import PackingList from "./PackingList";
+import ListasRender from "./ListasRender";
 
 export default function Atv03() {
     return (
@@ -31,6 +32,8 @@ export default function Atv03() {
             <Ex7 />
 
             <PackingList />
+
+            <ListasRender />
 
             <Link to="/">Voltar</Link>
         </>
