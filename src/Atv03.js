@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Gallery from "./Gallery";
 import { Profile } from "./Gallery";
+import Todos from "./Todos";
 
 export default function Atv03() {
     return (
@@ -10,6 +11,8 @@ export default function Atv03() {
             <Gallery />
 
             <Profile />
+
+            <Todos />
 
             <Link to="/">Voltar</Link>
         </>
