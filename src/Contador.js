@@ -4,7 +4,7 @@ import homem from './homem.png';
 import mulher from './mulher.png';
 import reiniciar from './reiniciar.png';
 
-function Quadro(){
+function Quadro() {
     const [countTotal, setCount] = useState(0);
     const [countH, setCountH] = useState(0);
     const [countM, setCountM] = useState(0);
@@ -18,14 +18,14 @@ function Quadro(){
         setCountM(countM + 1);
         setCount(countTotal + 1);
     }
-    
+
     function cliqueMouseHSub() {
         if (countH > 0) {
             setCountH(countH - 1);
             setCount(countTotal - 1);
         }
     }
-    
+
     function cliqueMouseMSub() {
         if (countM > 0) {
             setCountM(countM - 1);
@@ -44,25 +44,25 @@ function Quadro(){
             <Total count={countTotal} />
             <Reiniciar onClick={cliqueMouseReset} />
             <div id='cont-pessoas'>
-                <Cont1 caminhoImg={homem} txtAlt={'Ícone de um homem com uniforme corporativo'} rotulo={'Homens'} count={countH} onClickAdd={cliqueMouseHAdd} onClickSub={cliqueMouseHSub}/>
+                <Cont1 caminhoImg={homem} txtAlt={'Ícone de um homem com uniforme corporativo'} rotulo={'Homens'} count={countH} onClickAdd={cliqueMouseHAdd} onClickSub={cliqueMouseHSub} />
                 <Cont1 caminhoImg={mulher} txtAlt={'Ícone de uma mulher com uniforme corporativo'} rotulo={'Mulheres'} count={countM} onClickAdd={cliqueMouseMAdd} onClickSub={cliqueMouseMSub} />
             </div>
         </div>
     );
 }
 
-function Total({ count }){
+function Total({ count }) {
     return (
         <>
-        <div id='parte-total'>
-            <h2 id='total'>Total</h2>
-            <Contagem count={count} />
-        </div>
+            <div id='parte-total'>
+                <h2 id='total'>Total</h2>
+                <Contagem count={count} />
+            </div>
         </>
     );
 }
 
-function Cont1({ caminhoImg, txtAlt, rotulo, count, onClickAdd, onClickSub }){ // Parte que contém a imagem, os botões, o rótulo e o contador
+function Cont1({ caminhoImg, txtAlt, rotulo, count, onClickAdd, onClickSub }) { // Parte que contém a imagem, os botões, o rótulo e o contador
     return (
         <div id='parte-pessoa'>
             <img className='figura' src={caminhoImg} alt={txtAlt}></img>
@@ -76,7 +76,7 @@ function Cont1({ caminhoImg, txtAlt, rotulo, count, onClickAdd, onClickSub }){ /
     );
 }
 
-function Soma({ onClick }){
+function Soma({ onClick }) {
     return (
         <button id='soma' onClick={onClick}>
             +
@@ -84,7 +84,7 @@ function Soma({ onClick }){
     )
 }
 
-function Subtrair({ onClick }){
+function Subtrair({ onClick }) {
     return (
         <button id='subtrair' onClick={onClick}>
             -
@@ -92,7 +92,7 @@ function Subtrair({ onClick }){
     )
 }
 
-function Contagem({ count }){
+function Contagem({ count }) {
     return (
         <div className="contador">
             {count}
@@ -109,7 +109,7 @@ function Reiniciar({ onClick }) {
 export default function Contador() {
     return (
         <>
-        <Quadro />
+            <Quadro />
         </>
     );
 }

@@ -1,12 +1,26 @@
+import { useState } from "react";
 import "./Relogio.css";
 
-let hora = new Date().toLocaleTimeString('pt-BR');
-
 export default function Relogio() {
-    
-    return (
-      <>
-      <button>I'm a button</button>
-      </>
-    );
+  const [hora, setHora] = useState(0);
+
+  function tempoPassou() {
+    setHora(hora + 1);
+  }
+
+  
+
+  let horaAt = 0;
+  function tick() {
+    horaAt++;
+    tempoPassou();
+  }
+
+  setInterval(tick, 1000);
+
+  return (
+    <>
+      <p>{hora}</p>
+    </>
+  );
 }
