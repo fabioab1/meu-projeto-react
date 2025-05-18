@@ -27,6 +27,8 @@ export default function Atv01() {
 
       <Relogio />
 
+      <Letreiro />
+
       <Link to="/">Voltar</Link>
     </>
   );
