@@ -11,6 +11,7 @@ import Form2 from "./Form2";
 import Form3 from "./Form3";
 import List from "./List";
 import List2 from "./List2";
+import ShapeEditor from "./ShapeEditor";
 
 export default function MinhasRotas(){
     return(
@@ -27,6 +28,7 @@ export default function MinhasRotas(){
                 <Route path="/form3" element={<Form3 />}/>
                 <Route path="/list" element={<List />}/>
                 <Route path="/list2" element={<List2 />}/>
+                <Route path="/shape-editor" element={<ShapeEditor />}/>
                 
             </Routes>
         </BrowserRouter>
