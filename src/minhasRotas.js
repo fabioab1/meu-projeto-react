@@ -8,6 +8,8 @@ import Atv04 from "./Atv04";
 
 import MovingDot from "./MovingDot";
 import Form2 from "./Form2";
+import Form3 from "./Form3";
+import List from "./List";
 
 export default function MinhasRotas(){
     return(
@@ -18,9 +20,12 @@ export default function MinhasRotas(){
                 <Route path="/atv02" element={<Atv02 />}/>
                 <Route path="/atv03" element={<Atv03 />}/>
                 <Route path="/atv04" element={<Atv04 />}/>
-                
+
                 <Route path="/moving-dot" element={<MovingDot />}/>
                 <Route path="/form2" element={<Form2 />}/>
+                <Route path="/form3" element={<Form3 />}/>
+                <Route path="/list" element={<List />}/>
+                
             </Routes>
         </BrowserRouter>
     );
