@@ -6,6 +6,7 @@ import Atv02 from "./Atv02";
 import Atv03 from "./Atv03";
 import Atv04 from "./Atv04";
 
+import Toolbar from "./Toolbar";
 import MovingDot from "./MovingDot";
 import Form2 from "./Form2";
 import Form3 from "./Form3";
@@ -14,6 +15,9 @@ import List2 from "./List2";
 import ShapeEditor from "./ShapeEditor";
 import CounterList from "./CounterList";
 import List3 from "./List3";
+import List4 from "./List4";
+import BucketList from "./BucketList";
+import GalleryAtv4 from "./GalleryAtv4";
 
 export default function MinhasRotas(){
     return(
@@ -25,6 +29,8 @@ export default function MinhasRotas(){
                 <Route path="/atv03" element={<Atv03 />}/>
                 <Route path="/atv04" element={<Atv04 />}/>
 
+                <Route path="/toolbar" element={<Toolbar />}/>
+                <Route path="/gallery" element={<GalleryAtv4 />}/>
                 <Route path="/moving-dot" element={<MovingDot />}/>
                 <Route path="/form2" element={<Form2 />}/>
                 <Route path="/form3" element={<Form3 />}/>
@@ -33,6 +39,8 @@ export default function MinhasRotas(){
                 <Route path="/shape-editor" element={<ShapeEditor />}/>
                 <Route path="/counter-list" element={<CounterList />}/>
                 <Route path="/list3" element={<List3 />}/>
+                <Route path="/list4" element={<List4 />}/>
+                <Route path="/bucket-list" element={<BucketList />}/>
                 
             </Routes>
         </BrowserRouter>
