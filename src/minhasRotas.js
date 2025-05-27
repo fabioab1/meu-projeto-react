@@ -7,6 +7,8 @@ import Atv03 from "./Atv03";
 import Atv04 from "./Atv04";
 
 import Toolbar from "./Toolbar";
+import GalleryAtv4 from "./GalleryAtv4";
+import Counter from "./Counter";
 import MovingDot from "./MovingDot";
 import Form2 from "./Form2";
 import Form3 from "./Form3";
@@ -17,7 +19,6 @@ import CounterList from "./CounterList";
 import List3 from "./List3";
 import List4 from "./List4";
 import BucketList from "./BucketList";
-import GalleryAtv4 from "./GalleryAtv4";
 
 export default function MinhasRotas(){
     return(
@@ -29,8 +30,9 @@ export default function MinhasRotas(){
                 <Route path="/atv03" element={<Atv03 />}/>
                 <Route path="/atv04" element={<Atv04 />}/>
 
-                <Route path="/toolbar" element={<Toolbar />}/>
+                <Route path="/atv4/toolbar" element={<Toolbar />}/>
                 <Route path="/gallery" element={<GalleryAtv4 />}/>
+                <Route path="/counter" element={<Counter />}/>
                 <Route path="/moving-dot" element={<MovingDot />}/>
                 <Route path="/form2" element={<Form2 />}/>
                 <Route path="/form3" element={<Form3 />}/>

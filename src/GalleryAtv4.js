@@ -42,7 +42,7 @@ export default function Gallery() {
             </div>
 
             <div>
-                <Link to="/Atv04">Voltar</Link>
+                
             </div>
         </>
     );
