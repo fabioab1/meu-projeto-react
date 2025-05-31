@@ -5,6 +5,7 @@ import Atv01 from "./Atv01";
 import Atv02 from "./Atv02";
 import Atv03 from "./Atv03";
 import Atv04 from "./Atv04";
+import Atv05 from "./Atv05";
 
 import Toolbar from "./Toolbar";
 import GalleryAtv4 from "./GalleryAtv4";
@@ -21,6 +22,8 @@ import List3 from "./List3";
 import List4 from "./List4";
 import BucketList from "./BucketList";
 
+import FormQuiz from "./FormQuiz";
+
 export default function MinhasRotas(){
     return(
         <BrowserRouter>
@@ -30,6 +33,7 @@ export default function MinhasRotas(){
                 <Route path="/atv02" element={<Atv02 />}/>
                 <Route path="/atv03" element={<Atv03 />}/>
                 <Route path="/atv04" element={<Atv04 />}/>
+                <Route path="/atv05" element={<Atv05 />}/>
 
                 <Route path="/atv04/toolbar" element={<Toolbar />}/>
                 <Route path="/atv04/gallery" element={<GalleryAtv4 />}/>
@@ -46,6 +50,7 @@ export default function MinhasRotas(){
                 <Route path="/atv04/list4" element={<List4 />}/>
                 <Route path="/atv04/bucket-list" element={<BucketList />}/>
                 
+                <Route path="/atv05/form-quiz" element={<FormQuiz />}/>
             </Routes>
         </BrowserRouter>
     );
