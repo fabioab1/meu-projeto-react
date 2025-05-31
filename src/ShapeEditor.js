@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import Voltar from "./Voltar";
 
 let initialShapes = [
     { id: 0, type: 'circle', x: 50, y: 100 },
@@ -49,7 +49,7 @@ export default function ShapeEditor() {
             ))}
 
             <div>
-                <Link to="/Atv04">Voltar</Link>
+                <Voltar caminho={"/atv04"}/>
             </div>
         </>
     );

@@ -9,6 +9,7 @@ import Atv04 from "./Atv04";
 import Toolbar from "./Toolbar";
 import GalleryAtv4 from "./GalleryAtv4";
 import Counter from "./Counter";
+import Form from "./Form";
 import MovingDot from "./MovingDot";
 import Form2 from "./Form2";
 import Form3 from "./Form3";
@@ -30,19 +31,20 @@ export default function MinhasRotas(){
                 <Route path="/atv03" element={<Atv03 />}/>
                 <Route path="/atv04" element={<Atv04 />}/>
 
-                <Route path="/atv4/toolbar" element={<Toolbar />}/>
-                <Route path="/gallery" element={<GalleryAtv4 />}/>
-                <Route path="/counter" element={<Counter />}/>
-                <Route path="/moving-dot" element={<MovingDot />}/>
-                <Route path="/form2" element={<Form2 />}/>
-                <Route path="/form3" element={<Form3 />}/>
-                <Route path="/list" element={<List />}/>
-                <Route path="/list2" element={<List2 />}/>
-                <Route path="/shape-editor" element={<ShapeEditor />}/>
-                <Route path="/counter-list" element={<CounterList />}/>
-                <Route path="/list3" element={<List3 />}/>
-                <Route path="/list4" element={<List4 />}/>
-                <Route path="/bucket-list" element={<BucketList />}/>
+                <Route path="/atv04/toolbar" element={<Toolbar />}/>
+                <Route path="/atv04/gallery" element={<GalleryAtv4 />}/>
+                <Route path="/atv04/counter" element={<Counter />}/>
+                <Route path="/atv04/form" element={<Form />}/>
+                <Route path="/atv04/moving-dot" element={<MovingDot />}/>
+                <Route path="/atv04/form2" element={<Form2 />}/>
+                <Route path="/atv04/form3" element={<Form3 />}/>
+                <Route path="/atv04/list" element={<List />}/>
+                <Route path="/atv04/list2" element={<List2 />}/>
+                <Route path="/atv04/shape-editor" element={<ShapeEditor />}/>
+                <Route path="/atv04/counter-list" element={<CounterList />}/>
+                <Route path="/atv04/list3" element={<List3 />}/>
+                <Route path="/atv04/list4" element={<List4 />}/>
+                <Route path="/atv04/bucket-list" element={<BucketList />}/>
                 
             </Routes>
         </BrowserRouter>

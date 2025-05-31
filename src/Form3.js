@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import Voltar from "./Voltar";
 
 export default function Form3() {
     const [person, setPerson] = useState({
@@ -91,7 +91,7 @@ export default function Form3() {
             />
 
             <div>
-                <Link to="/Atv04">Voltar</Link>
+                <Voltar caminho={"/atv04"}/>
             </div>
         </>
     );

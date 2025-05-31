@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import { sculptureList } from "./data";
 import { useState } from "react";
+import Voltar from "./Voltar";
 
 export default function Gallery() {
     const [index, setIndex] = useState(0);
@@ -42,7 +42,7 @@ export default function Gallery() {
             </div>
 
             <div>
-                
+                <Voltar caminho={"/atv04"}/>
             </div>
         </>
     );

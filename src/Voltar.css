@@ -1,0 +1,26 @@
+.btn-voltar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btn-voltar:hover {
+  background-color: #1a252f;
+  transform: translateY(-2px);
+}
+
+.btn-voltar:active {
+  background-color: #0f1419;
+  transform: translateY(0);
+}

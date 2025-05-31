@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Voltar from "./Voltar";
 
 export default function Form2() {
 
@@ -59,7 +59,7 @@ export default function Form2() {
                 ({person.email})
             </p>
 
-            <Link to="/Atv04">Voltar</Link>
+            <Voltar caminho={"/atv04"}/>
         </>
     );
 }

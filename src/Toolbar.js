@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Voltar from "./Voltar";
 
 function Button({ onClick, children }) {
     return (
@@ -25,7 +25,7 @@ export default function Toolbar() {
                 </Button>
             </div>
         
-            <Link to="/Atv04">Voltar</Link>
+            <Voltar caminho={"/atv04"}/>
         </>
     );
 }

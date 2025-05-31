@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Voltar from "./Voltar";
 
 export default function MovingDot() {
     const [position, setPosition] = useState({
@@ -33,7 +34,7 @@ export default function MovingDot() {
                 }} />
             </div>
 
-            <Link to="/Atv04">Voltar</Link>
+            <Voltar caminho={"/atv04"}/>
         </>
     );
 }

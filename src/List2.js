@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import Voltar from "./Voltar";
 
 let initialArtists = [
     { id: 0, name: 'Tarsila do Amaral'},
@@ -32,7 +32,7 @@ export default function List2() {
                 ))}
             </ul>
 
-            <Link to="/Atv04">Voltar</Link>
+            <Voltar caminho={"/atv04"}/>
         </>
     );
 }

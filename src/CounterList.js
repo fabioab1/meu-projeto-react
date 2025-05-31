@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Voltar from "./Voltar";
 
 let initialCounters = [
     0, 0, 0
@@ -34,7 +34,7 @@ export default function CounterList() {
                 ))}
             </ul>
         
-            <Link to="/Atv04">Voltar</Link>
+            <Voltar caminho={"/atv04"}/>
         </>
     );
 }

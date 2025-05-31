@@ -3,6 +3,7 @@ import { sculptureList } from "./data";
 import { useState, useEffect } from "react";
 import MovingDot from "./MovingDot";
 import Form2 from "./Form2";
+import Voltar from "./Voltar";
 
 // function Button() {
 //     // function handleClick() {
@@ -256,46 +257,46 @@ export default function App() {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/toolbar">Toolbar</Link>
+                        <Link to="/atv04/toolbar">Toolbar</Link>
                     </li>
                     <li>
-                        <Link to="/gallery">Gallery</Link>
+                        <Link to="/atv04/gallery">Gallery</Link>
                     </li>
                     <li>
-                        <Link to="/counter">Counter</Link>
+                        <Link to="/atv04/counter">Counter</Link>
                     </li>
                     <li>
-                        <Link to="/form">Form</Link>
+                        <Link to="/atv04/form">Form</Link>
                     </li>
                     <li>
-                       <Link to="/moving-dot">MovingDot</Link> 
+                       <Link to="/atv04/moving-dot">MovingDot</Link> 
                     </li>
                     <li>
-                        <Link to="/form2">Form2</Link>
+                        <Link to="/atv04/form2">Form2</Link>
                     </li>
                     <li>
-                        <Link to="/form3">Form3</Link>
+                        <Link to="/atv04/form3">Form3</Link>
                     </li>
                     <li>
-                        <Link to="/list">List</Link>
+                        <Link to="/atv04/list">List</Link>
                     </li>
                     <li>
-                        <Link to="/list2">List 2</Link>
+                        <Link to="/atv04/list2">List 2</Link>
                     </li>
                     <li>
-                        <Link to="/shape-editor">ShapeEditor</Link>
+                        <Link to="/atv04/shape-editor">ShapeEditor</Link>
                     </li>
                     <li>
-                        <Link to="/counter-list">CounterList</Link>
+                        <Link to="/atv04/counter-list">CounterList</Link>
                     </li>
                     <li>
-                        <Link to="/list3">List3</Link>
+                        <Link to="/atv04/list3">List3</Link>
                     </li>
                     <li>
-                        <Link to="/list4">List4</Link>
+                        <Link to="/atv04/list4">List4</Link>
                     </li>
                     <li>
-                        <Link to="/bucket-list">BucketList</Link>
+                        <Link to="/atv04/bucket-list">BucketList</Link>
                     </li>
                 </ul>
             </nav>
@@ -344,7 +345,7 @@ export default function App() {
 
             {/* <Button /> */}
 
-            <Link to="/">Voltar</Link>
+            <Voltar caminho={"/"}/>
         </>
     );
 }

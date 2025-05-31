@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Voltar from "./Voltar";
 
 let nextId = 3;
 const initialList = [
@@ -47,7 +47,7 @@ export default function BucketList() {
                 frameworks={yourList}
                 onToggle={handleToggleYourList} />
             
-            <Link to="/Atv04">Voltar</Link>
+            <Voltar caminho={"/atv04"}/>
         </>
     );
 }

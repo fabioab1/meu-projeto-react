@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Voltar from "./Voltar";
 
 function Contador1() {
     const [number, setNumber] = useState(0);
@@ -57,7 +57,7 @@ export default function Counter() {
             <Contador6 />
 
             <div>
-                <Link to="/Atv04">Voltar</Link>
+                <Voltar caminho={"/atv04"}/>
             </div>
         </>
     )

@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import Voltar from "./Voltar";
 
 let nextId = 0;
 
@@ -28,7 +28,7 @@ export default function List() {
                 ))}
             </ul>
 
-            <Link to="/Atv04">Voltar</Link>
+            <Voltar caminho={"/atv04"}/>
         </>
     );
 }

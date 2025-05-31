@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Voltar from "./Voltar";
 
 let nextId = 3;
 const initialRappers = [
@@ -41,7 +41,7 @@ export default function List3() {
                 ))}
             </ul>
             
-            <Link to="/Atv04">Voltar</Link>
+            <Voltar caminho={"/atv04"}/>
         </>
     );
 }
