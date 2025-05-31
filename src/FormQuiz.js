@@ -35,23 +35,23 @@ export default function FormQuiz() {
 
     return (
         <>
-            <h2 className={"titulo-quiz"}>Quiz de React</h2>
-            <p className={"pergunta"}>
+            <h2 className="titulo-quiz">Quiz de React</h2>
+            <p className="pergunta">
                 Em React, qual o nome do evento que, quando atribuído a um
                 componente, observa se houve um clique do mouse?
             </p>
-            <form className={"quiz-react"} onSubmit={handleSubmit}>
+            <form className="quiz-react" onSubmit={handleSubmit}>
                 <textarea 
                     value={answer}
                     onChange={handleTextareaChange}
                     disabled={status === 'submitting'}
-                    className={"resposta-quiz"}
+                    className="resposta-quiz"
                 />
                 <br />
                 <button disabled={
                     answer.length === 0 ||
                     status === 'submitting'
-                } className={"enviar-resposta"}>
+                } className="enviar-resposta">
                     Responder
                 </button>
                 {error !== null &&

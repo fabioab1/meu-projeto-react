@@ -1,0 +1,47 @@
+.form-ticket {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-ticket {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.label-ticket {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #34495e;
+}
+
+.input-ticket {
+  width: 95%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid #bdc3c7;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.input-ticket:focus {
+  outline: none;
+  border-color: #2c3e50;
+}
+
+.resul-ticket {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
