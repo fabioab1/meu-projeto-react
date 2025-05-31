@@ -24,7 +24,7 @@ export default function Accordion() {
                 className="panel"
             >
                 <span lang="pt-br">Desenvolvimento de um</span> software 
-                <span lang="pt-br">utilizando os conhecimentos adquiridos 
+                <span lang="pt-br"> utilizando os conhecimentos adquiridos 
                 ao longo do curso. A elaboração deve abordar as disciplinas 
                 de requisitos, análise e projeto, implementação, implantação
                 e gerência de projetos. O processo de desenvolvimento, assim
