@@ -17,6 +17,9 @@ export default function Atv05() {
                     <li>
                         <Link to="/atv05/lab-eng-soft">Accordion</Link>
                     </li>
+                    <li>
+                        <Link to="/atv05/messenger">Messenger</Link>
+                    </li>
                 </ul>
             </nav>
 

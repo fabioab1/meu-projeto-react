@@ -21,10 +21,11 @@ import CounterList from "./CounterList";
 import List3 from "./List3";
 import List4 from "./List4";
 import BucketList from "./BucketList";
-import Accordion from "./Accordion";
 
 import FormQuiz from "./FormQuiz";
 import FormTicket from "./FormTicket";
+import Accordion from "./Accordion";
+import Messenger from "./Messenger";
 
 export default function MinhasRotas(){
     return(
@@ -55,6 +56,7 @@ export default function MinhasRotas(){
                 <Route path="/atv05/form-quiz" element={<FormQuiz />}/>
                 <Route path="/atv05/form-ticket" element={<FormTicket />}/>
                 <Route path="/atv05/lab-eng-soft" element={<Accordion />}/>
+                <Route path="/atv05/messenger" element={<Messenger />}/>
             </Routes>
         </BrowserRouter>
     );
